@@ -134,7 +134,7 @@ fn check_string_is_a_choice(
 /// # Example
 ///
 /// ```
-/// use simple_io::*;
+/// use simple_cli::*;
 /// let items = vec!["Moe", "Larry", "Curly"];
 /// print_list(Some("My list:"), &items);
 ///
@@ -151,7 +151,7 @@ pub fn print_list<T: Display>(header_message: Option<&str>, items: &[T]) {
 /// # Example
 ///
 /// ```no_run
-/// use simple_io::*;
+/// use simple_cli::*;
 /// clear_terminal();
 /// ```
 pub fn clear_terminal() {
@@ -170,11 +170,11 @@ pub fn clear_terminal() {
 /// # Examples
 ///
 /// ```no_run
-/// use simple_io::*;
+/// use simple_cli::*;
 /// let items = vec!["Moe", "Larry", "Curly"];
 /// paginated_list(Some("Here is my paginated list:"), &items, 2, true);
 ///
-/// use simple_io::*;
+/// use simple_cli::*;
 /// let items = vec![1, 2, 3, 4, 5, 6, 7, 8, 9];
 /// paginated_list::<i8>(Some("Here is my paginated list:"), &items, 2, true);
 /// ```
@@ -257,7 +257,7 @@ pub fn paginated_list<T: Display>(
 /// # Example
 ///
 /// ```
-/// use simple_io::*;
+/// use simple_cli::*;
 /// let input = get_string(Some("Enter your name:"), Some("Enter your name:"), Some(25), false);
 /// ```
 pub fn get_string(
@@ -296,7 +296,7 @@ pub fn get_string(
 /// # Example
 ///
 /// ```
-/// use simple_io::*;
+/// use simple_cli::*;
 /// let input = get_number::<i8>(Some("Enter an integer from 0 to 10:"), None, Some(0), Some(10));
 ///
 /// let float_input = get_number::<f32>(Some("Enter a float from 0 to 10:"), None, Some(0.0), Some(10.0));
@@ -340,7 +340,7 @@ pub fn get_number<T: PartialOrd + Display + FromStr + Copy>(
 /// # Example
 ///
 /// ```
-/// use simple_io::*;
+/// use simple_cli::*;
 /// let choices: Vec<i8> = vec![1,2,3];
 /// let choice = select_number_from_choices::<i8>(Some("Enter 1, 2 or 3"), None, choices, true);
 ///
@@ -389,7 +389,7 @@ pub fn select_number_from_choices<T: PartialOrd + Display + FromStr + Copy>(
 /// # Example
 ///
 /// ```
-/// use simple_io::*;
+/// use simple_cli::*;
 /// let choices = vec!["Moe", "Larry", "Curly"];
 /// let choice = select_string_from_choices(Some("Select Moe, Larry, or Curly"), None, choices, false, true);
 ///

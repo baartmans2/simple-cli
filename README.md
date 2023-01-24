@@ -1,4 +1,4 @@
-# Simple-IO
+# Simple-CLI
 
 A simple library for handling command-line input and output in Rust.
 

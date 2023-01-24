@@ -17,8 +17,8 @@ fn main() {
         "Mosquito",
         "Bird",
     ];
-    simple_io::clear_terminal();
-    simple_io::paginated_list::<&str>(
+    simple_cli::clear_terminal();
+    simple_cli::paginated_list::<&str>(
         Some("Animals seen on the Super Cool Safari:"),
         &animals,
         3,

@@ -5,10 +5,10 @@ fn main() {
         "Blue", "Red", "Green", "Yellow", "Orange", "Purple", "Brown", "Pink", "Gray", "Black",
         "White",
     ];
-    simple_io::clear_terminal();
+    simple_cli::clear_terminal();
     println!(
         "Your favorite color is {}!",
-        simple_io::select_string_from_choices(
+        simple_cli::select_string_from_choices(
             Some("Enter your favorite color!"),
             Some("That isn't a color!"),
             colors,

@@ -62,7 +62,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "simple-io"
+name = "simple-cli"
 version = "0.1.0"
 dependencies = [
  "rand",
