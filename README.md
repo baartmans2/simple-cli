@@ -10,3 +10,5 @@ A simple library for handling command-line input and output in Rust.
 - Methods for displaying vector contents, paginated or unpaginated.
 
 ## Docs
+
+[API Documentation](https://docs.rs/simple-cli/latest/simple_cli/)
